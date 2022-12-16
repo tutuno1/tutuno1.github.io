@@ -1,5 +1,37 @@
-<html>
-	<body>
-		<p>Hallo world</p>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+    #titll
+        {
+            color: chocolate;
+        }
+    #butt
+        {
+            color: white;
+            background-color: black;
+        }
+    #root{
+        background-color: gainsboro;
+    }
+    </style>
+    <body id = "root" onload="time()">
+        
+        <title>Wecome to my web</title>
+
+        <h1 align="center" id="titll" >
+                Hallo world!
+        </h1>
+        <p align="center" id="titll">This is my first web!</p>
+        <p align="center" id="times" value=""></p>
+        <p align="center" ><button type="button"  onclick="window.open('https://www.github.com/tutuno1')" id = "butt">open github</button> <button type="button"  onclick="print()" id = "butt">print</button> <button type="button"  onclick="window.close()" id = "butt">close this web</button> </p>
+
+    </body>
+    <script>
+        async function time(){
+            
+            var b = new Date();
+            var a = document.getElementById("times")
+            a.innerText = b
+        }
+    </script>
 </html>
